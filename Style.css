@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: white;
+    --secondary-color: #FE6767;
+    --margin-default: 70px;
+}
+body{
+    height: 100vh;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding-top:  var(--margin-default);
+    padding-bottom: 24px;
+    font-family: 'Poppins';
+    font-style: italic;
+}
+
+header{
+    height: 48px;
+}
+.logo{
+    margin-left: var(--margin-default);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color:var(--secondary-color) ;
+    font-size: 36px;
+    position: relative;
+    top: -10px;
+    left: 00px;
+}
+.logo1{
+    margin-left: var(--margin-default);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    position: relative;
+    top: -50px;
+    left: 1100px;
+}
+.logo2{
+    margin-left: var(--margin-default);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color:white;
+    font-size: 26px;
+    position: relative;
+    top: -80px;
+    left: 1230px;
+}
+.logo3{
+    margin-left: var(--margin-default);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    position: relative;
+    top: -110px;
+    left: 1380px;
+}
+
+main{
+    flex-grow: 1;
+    display: grid;
+    margin-left: var(--margin-default);
+    margin-right: var(--margin-default);
+    grid-template-columns: repeat(12, 1fr);
+}
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+}
+.title_text{
+    font-size: 20vw;
+    color: #ffffff;
+}
+.title_transparent{
+    font-size: 27vw;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff5;
+    z-index: -1;
+}
+.description{
+    grid-column: 1/7;
+    place-self: center start;
+    color: #545454;
+}
+.descripitionc{
+    grid-column: 1/7;
+    place-self: center start;
+    color: #FE6767;
+    font-size: 70px;
+    position: relative;
+    top: 160px;
+}
+.ponto{
+    color: #545454;
+    font-size: 70px;
+    top: 0px;
+    left: 300px;
+}  
+.description_title{
+    font-size: 70px;
+    position: relative;
+    top: 150px;
+}
+.description_text{
+    font-size: 28px;
+    width: 500px;
+    color: gray;
+    position: relative;
+    top: 180px;
+}
+.learn {
+    color: #FE6767;
+    font-size: 22px;
+    top: 60px;
+    left:336px;
+    position: relative;
+    top: 260px;
+}
+
+.action{
+    grid-column: 1/-11;
+    place-self: center end;
+    height: 50px;
+    width: 300px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    top: 220px;
+}
+.bikefrente{
+    position: absolute;
+    top: 150px;
+    left:526px;
+    transform: (-1, 0, 0, 1, 0, 0);
+    z-index: 1;
+}
+.bikeatras{
+    position: absolute;
+    top: 150px;
+    left:1576px;
+    transform: (-1, 0, 0, 1, 0, 0);
+    z-index: 1;
+}
+.red{
+    position: absolute;
+    top: 0px;
+    left:829px;
+    transform: (-1, 0, 0, 1, 0, 0);
+    z-index: -1;
+}
+.assinatura{
+    color: black;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    top: 150px;
+    left: 0px;
+}
+.bateria{
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    color: #B6B6B6;
+    top: 230px;
+    left: -45px;
+}
+.setenta{
+    text-align: center;
+    position: relative;
+    font-size: 60px;
+    color: #FE6767;
+    top: 230px;
+    left: -90px;
+}
+.speed{
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    color: #B6B6B6;
+    top: 270px;
+    left: -110px;
+}
+.vintecinco{
+    text-align: center;
+    position: relative;
+    font-size: 60px;
+    color: #FE6767;
+    top: 270px;
+    left: -180px;
+}
+.time{
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    color: #545454;
+    top: 60px;
+    left: 220px;
+}
+.hours{
+    text-align: center;
+    position: relative;
+    font-size: 60px;
+    color: #ffffff;
+    top: 60px;
+    left: 270px;
+}
+.weight{
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    color: #545454;
+    top: 100px;
+    left: 140px;
+}
+.dezesseis{
+    text-align: center;
+    position: relative;
+    font-size: 60px;
+    color: #ffffff;
+    top: 100px;
+    left: 200px;
+}
